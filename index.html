@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Overview Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">🏥</div>
+      <nav>
+        <button class="icon-btn">🏠</button>
+        <button class="icon-btn">📄</button>
+        <button class="icon-btn">📊</button>
+        <button class="icon-btn">⚙️</button>
+        <button class="icon-btn">🔁</button>
+      </nav>
+    </aside>
+
+    <main class="dashboard">
+      <header>
+        <h1>Health Overview</h1>
+        <p>August 12, 2021</p>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Blood Sugar</h3>
+          <p><strong>80</strong> mg/dL</p>
+          <span class="status normal">Normal</span>
+        </div>
+        <div class="card">
+          <h3>Heart Rate</h3>
+          <p><strong>98</strong> bpm</p>
+          <span class="status normal">Normal</span>
+        </div>
+        <div class="card">
+          <h3>Blood Pressure</h3>
+          <p><strong>102</strong> / 72 mmHg</p>
+          <span class="status normal">Normal</span>
+        </div>
+      </section>
+
+      <section class="activity">
+        <h3>Activity Growth</h3>
+        <canvas id="activityChart"></canvas>
+      </section>
+
+      <section class="appointment">
+        <h3>Upcoming Appointment</h3>
+        <p><span class="date">August 14, 2021</span> Consultation with Dr. James</p>
+      </section>
+    </main>
+
+    <aside class="bmi-panel">
+      <h3>BMI Calculator</h3>
+      <div class="input-row">
+        <label>Height: 170 cm</label>
+        <label>Weight: 72 kg</label>
+      </div>
+      <div class="bmi-result">
+        <p>BMI: <strong>24.9</strong></p>
+        <span class="status healthy">You're Healthy</span>
+      </div>
+
+      <div class="body-measurements">
+        <h4>Body Measurements</h4>
+        <p>Last checked 2 days ago</p>
+        <p>Inverted Triangle Body Shape</p>
+        <ul>
+          <li>Chest: 44.5 in ⬆️</li>
+          <li>Waist: 34 in ⬇️</li>
+          <li>Hip: 42.5 in ⬇️</li>
+        </ul>
+        <img src="humanoid.png" alt="Body Shape" />
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
