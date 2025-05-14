@@ -1,0 +1,117 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .form-container {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .form-container p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .sign-up-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .or-divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .or-divider::before,
+    .or-divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .or-divider:not(:empty)::before {
+      margin-right: .5em;
+    }
+
+    .or-divider:not(:empty)::after {
+      margin-left: .5em;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social-buttons button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: white;
+      cursor: pointer;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .login-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .right-panel {
+      flex: 1;
+      background-image: url(flowers.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px 0 0 20px;
+    }

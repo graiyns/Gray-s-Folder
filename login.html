@@ -164,7 +164,7 @@
       </div>
 
       <div class="signup-link">
-        Don't you have an account? <a href="#">Sign up</a>
+        Don't have an account? <a href="register.html">Sign Up</a>
       </div>
     </div>
   </div>
@@ -172,7 +172,6 @@
   <div class="right-panel"></div>
 
   <script>
-    // Simulated valid credentials
     const validEmail = "test@example.com";
     const validPassword = "password123";
 
@@ -182,9 +181,9 @@
       const password = document.getElementById("password").value;
 
       if (email === validEmail && password === validPassword) {
-        window.location.href = "index.html"; // Redirect to dashboard
+        window.location.href = "index.html";
       } else {
-        alert("Invalid email or password.\nHint: test@example.com / password123");
+        alert("Invalid email or password.\\nHint: test@example.com / password123");
       }
     });
 
@@ -193,5 +192,4 @@
     }
   </script>
 </body>
-
 </html>
